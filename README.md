@@ -1,4 +1,4 @@
-# Goo-App-Struture
+# Goo-App-Architecture
 
 ASP.NET WebAPI Architecture 
 
