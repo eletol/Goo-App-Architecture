@@ -4,7 +4,7 @@ ASP.NET WebAPI Architecture
 
 WebAPI2 & EF Code first
 
-Bussiness manger pattern,
+Mediator pattern,
 
 Generic unit of work pattern,
 
