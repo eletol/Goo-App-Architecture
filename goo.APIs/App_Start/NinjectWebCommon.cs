@@ -74,8 +74,8 @@ namespace Assistance.APIs
         private static void RegisterServices(IKernel kernel)
         {
      
-            kernel.Bind<IDbContext>().To<DbGooContext>();
-            kernel.Bind<IUnitOfWork>().To<UnitOfWork<DbGooContext>>();
+            kernel.Bind<IDbContext>().To<DbGooContext>().InRequestScope();
+            kernel.Bind<IUnitOfWork>().To<UnitOfWork<DbGooContext>>().InRequestScope();
             kernel.Bind<IDriverDeviceBussinessManger>().To<DriverDeviceBussinessManger<DriverDeviceRepository>>();
             kernel.Bind<IPassengerDeviceBussinessManger>().To<PassengerDeviceBussinessManger<PassengerDeviceRepository>>();
         }
